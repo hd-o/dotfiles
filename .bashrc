@@ -16,6 +16,10 @@ export LIBVIRT_DEFAULT_URI="qemu:///system"
 alias l="ls -1A"
 alias lsh="l -sh"
 
+# node
+alias nr="npm run"
+alias dev="npm run dev"
+
 # prompt
 export PS1=$(echo "$PS1" | sed 's/0m\\\]\$/0m\\\]\\n\$/')
 

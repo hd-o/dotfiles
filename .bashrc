@@ -21,7 +21,7 @@ alias nr="npm run"
 alias dev="npm run dev"
 
 # prompt
-export PS1=$(echo "$PS1" | sed 's/0m\\\]\$/0m\\\]\\n\$/')
+export PS1=$(echo "$PS1" | sed 's/0m\\\]\$/0m\\\]\\t\\n\$/')
 
 netcap() {
   # allow binaries on protected ports (e.g 80, 443)

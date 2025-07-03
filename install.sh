@@ -2,4 +2,8 @@
 
 echo "source ~/dotfiles/.bashrc" >> ~/.bashrc
 
-git config --global core.editor vi
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y vim
+
+git config --global core.editor vim

@@ -9,9 +9,6 @@ alias grsh="git reset --soft HEAD^"
 alias gs="git status"
 alias gsc="git config credential.helper store"
 
-# libvirtd
-export LIBVIRT_DEFAULT_URI="qemu:///system"
-
 # ls
 alias l="ls -1A"
 alias lsh="l -sh"
@@ -19,9 +16,13 @@ alias lsh="l -sh"
 # node
 alias nr="npm run"
 alias dev="npm run dev"
+alias test="npm run test"
+alias ui="npm run test:ui"
 
-# prompt
-export PS1=$(echo "$PS1" | sed 's/0m\\\]\$/0m\\\]\\t\\n\$/')
+export EDITOR=vim
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+export PS1="${PS1%\$}\t\n\$ "
+export TZ="America/Sao_Paulo"
 
 netcap() {
   # allow binaries on protected ports (e.g 80, 443)

@@ -16,8 +16,11 @@ alias lsh="l -sh"
 # node
 alias nr="npm run"
 alias dev="npm run dev"
-alias test="npm run test"
+alias test="npm run test -- --watch"
 alias ui="npm run test:ui"
+
+# test spec with escaped path
+t:s() { npm run test -- $(printf '%q' $1); }
 
 export EDITOR=vim
 export LIBVIRT_DEFAULT_URI="qemu:///system"

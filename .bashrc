@@ -23,14 +23,3 @@ export EDITOR=vim
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 export PS1="${PS1%\$}\t\n\$ "
 export TZ="America/Sao_Paulo"
-
-netcap() {
-  # allow binaries on protected ports (e.g 80, 443)
-  sudo setcap cap_net_bind_service=+ep `which $1`
-}
-
-rmnm() {
-  rm -rf node_modules
-  rm -rf packages/**/node_modules
-  rm -rf packages/**/**/node_modules
-}

@@ -4,7 +4,7 @@ echo "source ~/dotfiles/.bashrc" >> ~/.bashrc
 
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y keychain vim
+sudo apt install -y bat keychain vim
 
 git config --global core.editor vim
 git config --global user.name "Hadrian de Oliveira"

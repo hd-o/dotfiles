@@ -2,11 +2,11 @@
 # nodejs shell env
 
 alias nr="npm run"
-alias dev="npm run dev"
-alias test="npm run test -- --watch"
-alias ui="npm run test:ui"
+alias nd="npm run dev"
+alias nt="npm run test -- --watch"
+alias ntu="npm run test:ui"
 
-t:s() {
+nts() {
   # test spec with escaped path
   npm run test -- $(printf '%q' $1)
 }

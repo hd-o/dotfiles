@@ -25,13 +25,12 @@
         "webfetch": "allow",
       },
     },
-    "claude-code": {
+    "ask": {
       "mode": "primary",
       "model": "anthropic/claude-sonnet-4-20250514",
-      "temperature": 0.8,
       "permission": {
         "bash": "ask",
-        "edit": "allow",
+        "edit": "ask",
         "webfetch": "allow",
       },
     },

@@ -4,44 +4,31 @@
   "keybinds": {
     "input_submit": "alt+enter",
   },
-  "agent": {
-    "ask": {
-      "mode": "primary",
-      "model": "anthropic/claude-sonnet-4-20250514",
-      "permission": {
-        "bash": "ask",
-        "edit": "ask",
-        "webfetch": "allow",
-      },
+  "permission": {
+    "bash": {
+      "git --no-pager diff *": "allow",
+      "git diff *": "allow",
     },
+    "edit": "ask",
+    "webfetch": "ask",
+  },
+  "agent": {
     "plan": {
       "mode": "primary",
       "model": "github-copilot/claude-sonnet-4",
       "temperature": 0.8,
-      "permission": {
-        "bash": "ask",
-        "edit": "ask",
-        "webfetch": "allow",
-      },
     },
     "build": {
       "mode": "primary",
       "model": "github-copilot/claude-sonnet-4",
       "temperature": 0.8,
       "permission": {
-        "bash": "ask",
         "edit": "allow",
-        "webfetch": "allow",
       },
     },
     "review": {
       "mode": "primary",
       "model": "github-copilot/gpt-5-mini",
-      "permission": {
-        "bash": "ask",
-        "edit": "ask",
-        "webfetch": "allow",
-      },
     },
   },
   "mcp": {

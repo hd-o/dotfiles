@@ -8,6 +8,7 @@
     "bash": {
       "git --no-pager diff *": "allow",
       "git diff *": "allow",
+      "git status": "allow",
     },
     "edit": "ask",
     "webfetch": "ask",

@@ -18,12 +18,8 @@ alias grs="git reset --soft"
 alias grsh="git reset --soft HEAD^"
 alias gs="git status"
 
-gbranch() {
-  # get current git branch
-  git branch 2>/dev/null | sed -n '/\* /s///p'
-}
+# get only name of current
+alias gbranch="git branch 2>/dev/null | sed -n '/\* /s///p'"
 
-gclean() {
-  # delete local branches except main
-  git switch main && git branch | grep -v main | xargs git branch -d
-}
+# delete local branches except main
+alias gclean="git switch main && git branch | grep -v main | xargs git branch -D"

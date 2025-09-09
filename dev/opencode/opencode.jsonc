@@ -5,6 +5,15 @@
     "input_submit": "alt+enter",
   },
   "agent": {
+    "ask": {
+      "mode": "primary",
+      "model": "anthropic/claude-sonnet-4-20250514",
+      "permission": {
+        "bash": "ask",
+        "edit": "ask",
+        "webfetch": "allow",
+      },
+    },
     "plan": {
       "mode": "primary",
       "model": "github-copilot/claude-sonnet-4",
@@ -25,9 +34,9 @@
         "webfetch": "allow",
       },
     },
-    "ask": {
+    "review": {
       "mode": "primary",
-      "model": "anthropic/claude-sonnet-4-20250514",
+      "model": "github-copilot/gpt-5-mini",
       "permission": {
         "bash": "ask",
         "edit": "ask",

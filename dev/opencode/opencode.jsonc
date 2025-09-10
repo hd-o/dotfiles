@@ -53,5 +53,10 @@
       "enabled": true,
       "command": ["npx", "-y", "--package=task-master-ai", "task-master-ai"],
     },
+    "linear": {
+      "type": "local",
+      "enabled": true,
+      "command": ["npx", "-y", "mcp-remote", "https://mcp.linear.app/sse"],
+    },
   },
 }

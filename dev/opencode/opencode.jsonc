@@ -9,6 +9,7 @@
       "git --no-pager diff *": "allow",
       "git diff *": "allow",
       "git status": "allow",
+      "tree *": "allow",
     },
     "edit": "ask",
     "webfetch": "ask",

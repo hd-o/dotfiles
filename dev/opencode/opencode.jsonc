@@ -1,63 +1,103 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": [],
+  "model": "openrouter/openai/gpt-5",
+  "small_model": "openrouter/openai/gpt-5-nano",
+  "tui": {
+    "scroll_speed": 1,
+  },
   "keybinds": {
     "input_submit": "alt+enter",
+  },
+  "provider": {
+    "anthropic": {
+      "models": {
+        "claude-sonnet-4-20250514": {
+          "options": {
+            "thinking": {
+              "type": "enabled",
+              "budgetTokens": 4000,
+            },
+          },
+        },
+      },
+    },
+    "openrouter": {
+      "models": {
+        "openrouter/openai/gpt-5": {
+          "options": {
+            "reasoningEffort": "medium",
+            "textVerbosity": "low",
+          },
+        },
+        "openai/gpt-5-mini": {
+          "options": {
+            "reasoningEffort": "medium",
+            "textVerbosity": "low",
+          },
+        },
+      },
+    },
   },
   "permission": {
     "bash": {
       "git --no-pager diff *": "allow",
       "git diff *": "allow",
       "git status": "allow",
+      "grep *": "allow",
+      "npm run lint:changed": "allow",
+      "npm run test -- *": "allow",
+      "rg *": "allow",
       "tree *": "allow",
     },
     "edit": "ask",
     "webfetch": "ask",
   },
   "agent": {
+    "ask": {
+      "mode": "primary",
+      "model": "github-copilot/gpt-5-mini",
+    },
     "plan": {
       "mode": "primary",
-      "model": "github-copilot/claude-sonnet-4",
-      "temperature": 0.8,
+      "model": "anthropic/claude-sonnet-4-20250514",
     },
     "build": {
       "mode": "primary",
-      "model": "github-copilot/claude-sonnet-4",
-      "temperature": 0.8,
+      "model": "openrouter/openai/gpt-5",
       "permission": {
         "edit": "allow",
       },
     },
-    "review": {
+    "debug": {
       "mode": "primary",
-      "model": "github-copilot/gpt-5-mini",
+      "model": "openrouter/openai/gpt-5-mini",
     },
   },
   "mcp": {
-    "playwright": {
+    "context7": {
       "type": "local",
       "enabled": true,
-      "command": ["npx", "-y", "@playwright/mcp@latest", "--isolated", "--browser=chromium"],
+      "command": ["npx", "-y", "@upstash/context7-mcp"],
     },
     "tavily": {
       "type": "local",
       "enabled": true,
       "command": ["npx", "-y", "tavily-mcp@0.2.3"],
     },
-    "context7": {
+    "linear": {
+      "enabled": false,
       "type": "local",
-      "enabled": true,
-      "command": ["npx", "-y", "@upstash/context7-mcp"],
+      "command": ["npx", "-y", "mcp-remote", "https://mcp.linear.app/sse"],
+    },
+    "playwright": {
+      "enabled": false,
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp@latest", "--isolated", "--browser=chromium"],
     },
     "task-master-ai": {
+      "enabled": false,
       "type": "local",
-      "enabled": true,
       "command": ["npx", "-y", "--package=task-master-ai", "task-master-ai"],
-    },
-    "linear": {
-      "type": "local",
-      "enabled": true,
-      "command": ["npx", "-y", "mcp-remote", "https://mcp.linear.app/sse"],
     },
   },
 }

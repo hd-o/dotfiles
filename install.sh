@@ -4,7 +4,7 @@ echo "source ~/dotfiles/.bashrc" >> ~/.bashrc
 
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y bat fd-find fzf jq keychain ripgrep tree vim
+sudo apt install -y bat fd-find fzf jq keychain ripgrep tree vim xdg-utils
 
 git config --global core.editor vim
 git config --global user.name "Hadrian de Oliveira"

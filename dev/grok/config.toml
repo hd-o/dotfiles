@@ -1,0 +1,15 @@
+[ui]
+compact_mode = true
+fork_secondary_model = "grok-4.5"
+permission_mode = "always-approve"
+
+[models]
+default = "grok-4.5"
+default_reasoning_effort = "medium"
+
+[disabled_mcp_tools]
+__managed_gateway_connectors = [
+    "google_drive",
+    "tasks",
+    "voice",
+]

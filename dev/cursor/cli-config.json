@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "editor": {
+    "vimMode": false
+  },
+  "model": {
+    "default": "grok-4.5",
+    "effort": "medium"
+  },
+  "permissions": {
+    "allow": [
+      "*"
+    ],
+    "deny": []
+  }
+}

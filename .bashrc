@@ -6,6 +6,7 @@ source ~/dotfiles/system/files/shell.sh
 source ~/dotfiles/dev/git/shell.sh
 source ~/dotfiles/dev/node/shell.sh
 source ~/dotfiles/dev/opencode/shell.sh
+source ~/dotfiles/dev/python/shell.sh
 
 export EDITOR=vim
 export LIBVIRT_DEFAULT_URI="qemu:///system"

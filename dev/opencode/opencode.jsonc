@@ -2,9 +2,6 @@
   "$schema": "https://opencode.ai/config.json",
   "subagent_depth": 2,
   "permission": "allow",
-  "plugin": [
-    "openguardrails-instrumentation-opencode"
-  ],
   "mcp": {
     "linear": {
       "enabled": false,

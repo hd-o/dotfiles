@@ -2,6 +2,7 @@
 
 alias dot="code ~/dotfiles"
 
+source ~/dotfiles/system/utils/shell.sh
 source ~/dotfiles/system/files/shell.sh
 source ~/dotfiles/dev/git/shell.sh
 source ~/dotfiles/dev/node/shell.sh

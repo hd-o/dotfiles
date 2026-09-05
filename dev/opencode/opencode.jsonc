@@ -1,5 +1,24 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "default_agent": "plan",
-  "permission": "allow"
+  "permission": "allow",
+  "small_model": "openai/gpt-5.6-luna",
+  "agent": {
+    "plan": {
+      "model": "openai/gpt-5.6-sol",
+      "variant": "medium"
+    },
+    "build": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "variant": "medium"
+    },
+    "general": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "variant": "medium"
+    },
+    "explore": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "variant": "low"
+    },
+  }
 }

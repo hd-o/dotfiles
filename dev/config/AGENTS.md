@@ -14,6 +14,7 @@ When asked to remove something, do not leave comments explaining that the remove
 
 - Creating documentation files not requested by a task
 - Using git's `--no-verify` / `--force` / `reset --hard`
+- Unless instructed otherwise, ignore `.ignore/` folders
 
 ## Naming
 

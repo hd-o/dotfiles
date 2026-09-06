@@ -10,7 +10,6 @@ git config --global core.editor vim
 git config --global user.name "Hadrian de Oliveira"
 (cd ~/dotfiles && git config user.email "hadrian.no.reply@outlook.com")
 
-~/dotfiles/system/loggin/shell.sh
 ~/dotfiles/dev/nvm/install.sh
 ~/dotfiles/dev/opencode/install.sh
 ~/dotfiles/dev/config/install.sh

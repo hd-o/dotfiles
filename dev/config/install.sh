@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/dotfiles/system/logging/shell.sh
+
 for name in .agents AGENTS.md; do
   if [ -e ~/"$name" ] || [ -L ~/"$name" ]; then
     warn "~/${name} already exists, skipping creation"

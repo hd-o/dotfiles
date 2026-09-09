@@ -1,15 +1,24 @@
 ---
-name: prd
-description: Write a PRD
-user-invocable: true
-disable-model-invocation: true
+description: Write a project requirements document.
 ---
 
 # Write a PRD
 
-Create `.tracker/{name-for-the-project}/PRD.md`: a complete, internally
-consistent specification from which dependency-correct implementation tasks
-can be generated without guessing. Scope and decisions come only from the user's request, approved/current plan, and named live or tracker documents. Live project files validate facts such as behavior, paths, architecture, tests, and commands; they do not authorize additional scope. Approved decisions, exclusions, uncertainties, prerequisites, sequencing, atomicity constraints, validation gates, and follow-on conditions remain intact. Requirements describe observable, verifiable outcomes and preserved contracts rather than speculative design. Unsupported metrics, research, baselines, contracts, paths, architecture, and product scope are absent. Material unresolved decisions are returned to the user. Minor assumptions are narrow and labeled; open questions are non-normative. Every goal traces to requirements and success criteria; requirements align with non-goals, contracts, dependencies, valid repository checkpoints, and proportionate validation.
+Create `.tracker/$ARGUMENTS/PRD.md`: a complete, internally consistent
+specification from which dependency-correct implementation tasks can be
+generated without guessing. Scope and decisions come only from the user's
+request, approved/current plan, and named live or tracker documents. Live
+project files validate facts such as behavior, paths, architecture, tests, and
+commands; they do not authorize additional scope. Approved decisions,
+exclusions, uncertainties, prerequisites, sequencing, atomicity constraints,
+validation gates, and follow-on conditions remain intact. Requirements describe
+observable, verifiable outcomes and preserved contracts rather than speculative
+design. Unsupported metrics, research, baselines, contracts, paths,
+architecture, and product scope are absent. Material unresolved decisions are
+returned to the user. Minor assumptions are narrow and labeled; open questions
+are non-normative. Every goal traces to requirements and success criteria;
+requirements align with non-goals, contracts, dependencies, valid repository
+checkpoints, and proportionate validation.
 
 ## Adaptable Outline
 

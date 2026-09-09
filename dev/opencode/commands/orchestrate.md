@@ -1,21 +1,24 @@
 ---
-name: orchestrate
-description: Orchestrate the implementation of given tasks
-user-invocable: true
-disable-model-invocation: true
-argument-hint: "[tracker-dir]"
+description: Orchestrate implementation of tracker tasks.
+agent: build
 ---
 
 # Orchestration
 
 The result is a reviewed, verified, and committed implementation of every
-`task-*.md` in the tracker, plus a final `REPORT.md`. `{tracker-dir}` is the supplied directory, or the parent when the argument is a file. Its unchecked tasks run in filename order; checked tasks remain complete. All task's PRD is `{tracker-dir}/PRD.md` by default.
+`task-*.md` in the tracker, plus a final `REPORT.md`. `$ARGUMENTS` is the
+supplied tracker directory, or its parent when it names a file. Its unchecked
+tasks run in filename order; checked tasks remain complete. All tasks' PRD is
+`{tracker-dir}/PRD.md` by default.
 
 ## Responsibilities
 
 The orchestrator owns dispatch, acceptance verification, independent review,
 task state, commits, and reporting. Implementation sub-agents own application
-logic; the orchestrator does not implement it. One complete `task-NN.md` is one sequential sub-agent dispatch. Its sub-tasks remain ordered steps within that dispatch. Tasks are neither split nor merged; an oversized task requires human renegotiation.
+logic; the orchestrator does not implement it. One complete `task-NN.md` is one
+sequential sub-agent dispatch. Its sub-tasks remain ordered steps within that
+dispatch. Tasks are neither split nor merged; an oversized task requires human
+renegotiation.
 
 ## Dispatch Contract
 
@@ -46,9 +49,15 @@ shims, git operations, tracker edits, or self-review.
 
 ## Return
 
-After implementation, load `subagent-retro`. Return each sub-task's status,
-files touched, verification results, and the retrospective. The parent
-orchestrator owns `review-work`.
+After implementation, return each sub-task's status, files touched, verification
+results, and this retrospective. The parent orchestrator owns `review-work`.
+
+## Retrospective
+
+- Prompt/Skill gaps:
+- Failed commands:
+- Keep:
+- Change:
 ```
 
 ## Completion Gate
@@ -63,7 +72,10 @@ A task is complete only when:
 The review receives the task goal, PRD, acceptance criteria, touched files, and
 changed tests. A **FAILED** review returns to the same implementation thread
 with the findings; the orchestrator does not fix application code or delegate a
-concurrent repair. After **PASS**, the orchestrator checks the task checkbox and creates one conventional commit containing only that task's changes and checkbox update. Explicit paths are staged instead of `git add -A`; secrets are never staged.
+concurrent repair. After **PASS**, the orchestrator checks the task checkbox and
+creates one conventional commit containing only that task's changes and checkbox
+update. Explicit paths are staged instead of `git add -A`; secrets are never
+staged.
 
 ```bash
 git commit -m "<feat|fix|chore|docs|test|refactor>: <task>"

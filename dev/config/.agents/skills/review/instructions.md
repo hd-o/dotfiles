@@ -14,7 +14,11 @@ Passing work:
 Only critical and important findings belong in the review. Exclude nits,
 preferences, optional polish, speculative concerns, and redundant tests that
 mirror implementation, duplicate coverage, or pin non-contractual symbol
-existence. Every finding identifies the evidence, impact, severity, and a concrete fix. The review remains neutral and focused on the work. It evaluates only the provided artifacts without executing or modifying them; missing evidence is stated explicitly.
+existence. Every finding identifies the evidence, impact, severity, and a
+concrete fix. The review remains neutral and focused on the work. It evaluates
+only the provided artifacts without executing or modifying them; missing 
+evidence is stated explicitly. Make sure to load project skills related
+to the files being reviewed so you're aware of all project conventions.
 
 ## Verdict
 

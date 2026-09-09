@@ -14,7 +14,7 @@ user-invocable: true
 
 Invoke a subagent to evaluate the completed task.
 
-Do not skip the subagent. If you can't invoke subagent, halt and respond
+MUST not skip subagent. If can't invoke subagent, halt and raise.
 
 Every review ends with an explicit **PASS** or **FAILED** verdict:
 

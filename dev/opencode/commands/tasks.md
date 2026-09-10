@@ -1,5 +1,6 @@
 ---
 description: Generate dependency-ordered tasks from a PRD.
+agent: build
 ---
 
 # Generate Tasks

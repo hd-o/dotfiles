@@ -1,20 +1,18 @@
 ---
-name: review-work
+name: sub-review
 description: >
    Use after completing a coding task (implementation, refactor, fix)
    to review work before considering it done
-user-invocable: true
 ---
-
-# Task Review
+# Work Review
 
 > [!NOTE]
 >
 > If you're the review subagent: Ignore this skill; Follow [`./instructions.md`](./instructions.md)
 
-Invoke a subagent to evaluate the completed task.
+MUST invoke a subagent to evaluate the completed task.
 
-MUST not skip subagent. If can't invoke subagent, halt and raise.
+**If can't invoke subagent, end with gathered context and ask parent to sub-review.**
 
 Every review ends with an explicit **PASS** or **FAILED** verdict:
 

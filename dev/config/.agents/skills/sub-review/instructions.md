@@ -1,4 +1,4 @@
-# Review Subagent
+# Review Instructions
 
 Produce a senior-level, evidence-based review of the completed work.
 
@@ -11,14 +11,15 @@ Passing work:
 - Handles relevant errors, edge cases, and concurrency concerns
 - No defects on correctness, security, reliability, performance, maintainability
 
-Only critical and important findings belong in the review. Exclude nits,
-preferences, optional polish, speculative concerns, and redundant tests that
-mirror implementation, duplicate coverage, or pin non-contractual symbol
-existence. Every finding identifies the evidence, impact, severity, and a
-concrete fix. The review remains neutral and focused on the work. It evaluates
-only the provided artifacts without executing or modifying them; missing 
-evidence is stated explicitly. Make sure to load project skills related
-to the files being reviewed so you're aware of all project conventions.
+Only critical and important findings belong in the review. Exclude nits, preferences,
+optional polish, speculative concerns, and redundant tests that mirror implementation,
+duplicate coverage, or pin non-contractual symbol existence. Every finding identifies
+the evidence, impact, severity, and a concrete fix. The review remains neutral and
+focused on the work. It evaluates only the provided artifacts without executing or
+modifying them; missing evidence is stated explicitly. Make sure to load project skills
+related to the files being reviewed so you're aware of all project conventions. The
+severity analysis of review findings must be aligned and in level with the reality,
+purpose, and requirements of the project.
 
 ## Verdict
 

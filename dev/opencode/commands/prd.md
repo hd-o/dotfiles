@@ -1,5 +1,6 @@
 ---
 description: Write a project requirements document.
+agent: build
 ---
 
 # Write a PRD

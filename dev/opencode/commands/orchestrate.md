@@ -50,14 +50,14 @@ shims, git operations, tracker edits, or self-review.
 ## Return
 
 After implementation, return each sub-task's status, files touched, verification
-results, and this retrospective. The parent orchestrator owns `review-work`.
+results, and one retrospective. The parent orchestrator owns `review-work`.
 
 ## Retrospective
 
-- Prompt/Skill gaps:
-- Failed commands:
-- Keep:
-- Change:
+Prompt/Skill gaps: missing paths, conflicting instructions, extra hops
+Failed commands: exact commands and why they failed
+Keep: payloads or workflow items that saved a hop
+Change: concrete payloads, skills, or CLI changes
 ```
 
 ## Completion Gate

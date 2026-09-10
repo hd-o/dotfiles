@@ -2,8 +2,11 @@
 
 echo "source ~/dotfiles/.bashrc" >> ~/.bashrc
 
-sudo apt update
-sudo apt install -y bat fd-find fzf jq ripgrep tree vim xdg-utils
+sudo apt update && sudo apt install -y \
+  # CLI tools
+  bat fd-find fzf jq ripgrep tree vim xdg-utils \
+  # GUI testing
+  xvfb x11-utils scrot xdotool
 
 git config --global core.editor vim
 git config --global user.name "Hadrian de Oliveira"

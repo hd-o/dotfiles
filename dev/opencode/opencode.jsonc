@@ -2,7 +2,6 @@
   "$schema": "https://opencode.ai/config.json",
   "default_agent": "plan",
   "permission": "allow",
-  "small_model": "opencode/minimax-m3-free",
   "agent": {
     "plan": {
       "model": "opencode-go/muse-spark-1.3-contributor",

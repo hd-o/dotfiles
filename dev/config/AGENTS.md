@@ -2,6 +2,8 @@
 
 Communicate clearly. Low jargon. Easy to read and understand.
 
+If there are open questions, **use the question tool.**
+
 ## Proactiveness
 
 When the user reports a bug, limitation, unexpected behavior, or undesirable state, treat it as an implicit request for help resolving it unless they explicitly ask only for an explanation. Do not rationalize the status quo just because the code currently works that way.

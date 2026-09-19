@@ -6,10 +6,19 @@ agent: build
 # Orchestration
 
 The result is a reviewed, verified, and committed implementation of every
-`task-*.md` in the tracker, plus a final `REPORT.md`. `$ARGUMENTS` is the
-supplied tracker directory, or its parent when it names a file. Its unchecked
-tasks run in filename order; checked tasks remain complete. All tasks' PRD is
-`{tracker-dir}/PRD.md` by default.
+`tasks/task-*.md` in the tracker, plus a final `REPORT.md`. `$ARGUMENTS`
+is the supplied tracker directory, or its parent when it names a PRD file.
+
+## Progress Tracking
+
+`tasks/STATUS.md` is the authoritative completion ledger. At startup and after
+any resumed run, read this single file and create a runtime todo item for each
+entry. Mirror checked entries as completed and unchecked entries as pending.
+Verify that its filenames match `tasks/task-*.md`; halt for tracker regeneration
+if the index is absent or inconsistent. Never open, dispatch, modify, or
+recommit a task with a checked entry. Open a task file only when its entry is
+the next pending task. The runtime todo list is a progress view, not a
+replacement for the file-backed ledger.
 
 ## Responsibilities
 
@@ -54,7 +63,7 @@ results, and one retrospective. The parent orchestrator owns `review-work`.
 
 ## Retrospective
 
-Prompt/Skill gaps: missing paths, conflicting instructions, extra hops
+Prompt/Skill gaps: missing paths, conflicting instructions
 Failed commands: exact commands and why they failed
 Keep: payloads or workflow items that saved a hop
 Change: concrete payloads, skills, or CLI changes
@@ -72,10 +81,11 @@ A task is complete only when:
 The review receives the task goal, PRD, acceptance criteria, touched files, and
 changed tests. A **FAILED** review returns to the same implementation thread
 with the findings; the orchestrator does not fix application code or delegate a
-concurrent repair. After **PASS**, the orchestrator checks the task checkbox and
-creates one conventional commit containing only that task's changes and checkbox
-update. Explicit paths are staged instead of `git add -A`; secrets are never
-staged.
+concurrent repair. After **PASS**, the orchestrator checks the task's `STATUS.md`
+entry and creates one conventional commit containing only that task's changes
+and the status update. Only after that commit succeeds does it mark the runtime
+todo complete and continue to the next unchecked entry. Explicit paths are
+staged instead of `git add -A`; secrets are never staged.
 
 ```bash
 git commit -m "<feat|fix|chore|docs|test|refactor>: <task>"
@@ -87,8 +97,8 @@ thread with only the relevant failure details. Attempt 10 records failures in
 
 ## Final Report
 
-`{tracker-dir}/REPORT.md` contains:
+`{tracker-dir}/REPORT.md` contains in order:
 
-- Commits and their change summaries
-- Manual usage or testing instructions
 - Retrospective section, with a TLDR
+- Manual usage or testing instructions
+- Commits and their change summaries

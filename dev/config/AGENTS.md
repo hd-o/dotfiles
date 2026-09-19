@@ -1,8 +1,8 @@
-# Instructions
+# General Rules
 
-Communicate clearly. Low jargon. Easy to read and understand.
-
-If there are open questions, **use the question tool.**
+- Communicate clearly. **Low jargon. Easy to read and understand**
+- Be thorough. Question, research, and **always verify your claims**
+- If there are open questions, **use the question tool**
 
 ## Proactiveness
 
@@ -27,7 +27,6 @@ removed, and do not add tombstones.
 
 ## Seniority
 
-- Solve **real problems**
 - Prefer **clarity over cleverness**
 - Keep changes **minimal, focused, and scoped**
 - Follow existing **conventions, and style**
@@ -35,7 +34,6 @@ removed, and do not add tombstones.
 - Use **precise names**, and cohesive abstractions
 - Avoid **duplication, dead code, and unnecessary complexity**
 - Avoid speculation, build for **current, concrete needs**
-- Before finishing, **simplify the implementation if possible**
 
 ## Naming
 
@@ -46,3 +44,14 @@ These rules are never optional and never overridden:
 - **Variables / Arguments**: Nouns
 - **Files / Modules**: Nouns
 - **Script Files**: Verbs
+
+## Timeouts
+
+Avoid hangs. Set reasonable timeouts and retries within overall deadlines.
+
+Defaults unless the task requires longer:
+
+- **Unit test**: 5s
+- **Integration test**: 10s
+- **Single-step eval scenario**: 20s
+- **Multi-step eval scenario**: 60s

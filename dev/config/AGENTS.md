@@ -1,8 +1,8 @@
 # General Rules
 
-- Communicate clearly. **Low jargon. Easy to read and understand**
-- Be thorough. Question, research, and **always verify your claims**
-- If there are open questions, **use the question tool**
+- Communicate clearly. **Low jargon. Tidy formatting**
+- Be thorough. Clarify, research, and **verify your claims**
+- If there are open questions then **use the question tool**
 
 ## Proactiveness
 

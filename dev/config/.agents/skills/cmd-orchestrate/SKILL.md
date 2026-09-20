@@ -1,8 +1,9 @@
 ---
-description: Orchestrate implementation of tracker tasks.
-agent: build
+name: orchestrate
+description: Ignore. User-invocable ONLY
+user-invocable: true
+disable-model-invocation: true
 ---
-
 # Orchestration
 
 The result is a reviewed, verified, and committed implementation of every

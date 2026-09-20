@@ -1,8 +1,9 @@
 ---
-description: Generate dependency-ordered tasks from a PRD.
-agent: build
+name: tasks
+description: Ignore. User-invocable ONLY
+user-invocable: true
+disable-model-invocation: true
 ---
-
 # Generate Tasks
 
 Transform PRD `$ARGUMENTS` into dependency-ordered, commit-sized task files in

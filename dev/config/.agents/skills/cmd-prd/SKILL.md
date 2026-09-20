@@ -1,8 +1,9 @@
 ---
-description: Write a project requirements document.
-agent: build
+name: prd
+description: Ignore. User-invocable ONLY
+user-invocable: true
+disable-model-invocation: true
 ---
-
 # Write a PRD
 
 Create `.tracker/<project-name>/PRD.md`: a complete, internally consistent

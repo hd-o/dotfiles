@@ -1,6 +1,8 @@
 ---
 name: wat
-description: Re-explain the previous message in a much simpler way
+description: Ignore. User-invocable ONLY
+user-invocable: true
+disable-model-invocation: true
 ---
 # Say it simpler
 

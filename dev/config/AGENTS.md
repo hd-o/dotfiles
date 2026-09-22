@@ -34,7 +34,6 @@ against specific, non-obvious traps.
 
 - Prefer **clarity over cleverness**
 - Keep changes **minimal, focused, and scoped**
-- Follow existing **conventions, and style**
 - Write **simple, readable, idiomatic** code
 - Use **precise names**, and cohesive abstractions
 - Avoid **duplication, dead code, and unnecessary complexity**

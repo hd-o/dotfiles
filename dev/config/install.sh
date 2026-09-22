@@ -1,11 +1,18 @@
 #!/bin/bash
 
+source ~/dotfiles/system/files/shell.sh
 source ~/dotfiles/system/logging/shell.sh
 
-for name in .agents AGENTS.md; do
-  if [ -e ~/"$name" ] || [ -L ~/"$name" ]; then
-    warn "~/${name} already exists, skipping creation"
+link_config() {
+  local name="$1" path="$2"
+  local dest="$path/$name"
+  
+  if [ -e "$dest" ] || [ -L "$dest" ]; then
+    warn "$dest already exists, skipping creation"
   else
-    ln -sf ~/dotfiles/dev/config/"$name" ~/"$name"
+    ln -sf ~/dotfiles/dev/config/"$name" "$dest"
   fi
-done
+}
+
+link_config .agents ~
+link_config AGENTS.md $(exists qoder && echo ~/.qoder/rules || echo ~)

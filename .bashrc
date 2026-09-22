@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias dot="code ~/dotfiles"
+dot() { $(command -v qoder || command -v code) ~/dotfiles; }
 
 source ~/dotfiles/system/logging/shell.sh
 source ~/dotfiles/system/files/shell.sh

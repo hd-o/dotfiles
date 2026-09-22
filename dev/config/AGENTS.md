@@ -1,3 +1,6 @@
+---
+trigger: always_on
+---
 # General Rules
 
 - Communicate clearly. **Low jargon. Tidy formatting**

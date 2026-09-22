@@ -60,7 +60,7 @@ shims, git operations, tracker edits, or self-review.
 ## Return
 
 After implementation, return each sub-task's status, files touched, verification
-results, and one retrospective. The parent orchestrator owns `review-work`.
+results, and one retrospective. The parent orchestrator owns `subagent-review`.
 
 ## Retrospective
 
@@ -74,10 +74,10 @@ Change: concrete payloads, skills, or CLI changes
 
 A task is complete only when:
 
-1. The implementation sub-agent reports all sub-tasks complete
+1. The implementation subagent reports all sub-tasks complete
 1. Project verification succeeds on the working tree
 1. New and renamed identifiers follow language naming conventions
-1. An independent `review-work` run reports **PASS**
+1. An independent `subagent-review` run reports **PASS**
 
 The review receives the task goal, PRD, acceptance criteria, touched files, and
 changed tests. A **FAILED** review returns to the same implementation thread

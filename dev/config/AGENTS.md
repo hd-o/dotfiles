@@ -14,10 +14,12 @@ currently works that way.
 
 ## Removals
 
-When asked to remove something, do not leave comments explaining
-that the removed functionality used to exist or should not be used.
-Do not add tests whose only purpose is to assert that it remains
-removed, and do not add tombstones.
+When asked to remove something, do not leave comments explaining that the
+removed functionality used to exist or should not be used. Do not add tests
+whose only purpose is to assert that it remains removed, and do not add
+tombstones. Mentioning or investigating an option in conversation is not a
+reason to record it in the artifact. Retain prohibitions only when guarding
+against specific, non-obvious traps.
 
 ## Prohibited
 

@@ -1,5 +1,5 @@
 ---
-name: wat
+name: cmd-wat
 description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true

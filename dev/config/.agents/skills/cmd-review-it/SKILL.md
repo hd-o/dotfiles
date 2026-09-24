@@ -1,5 +1,5 @@
 ---
-name: review-it
+name: cmd-review-it
 description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true

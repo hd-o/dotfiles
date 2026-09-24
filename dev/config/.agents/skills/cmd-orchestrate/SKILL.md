@@ -1,5 +1,5 @@
 ---
-name: orchestrate
+name: cmd-orchestrate
 description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true

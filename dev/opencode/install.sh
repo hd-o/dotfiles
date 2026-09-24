@@ -1,8 +1,6 @@
 #!/bin/bash
-# http://opencode.ai/docs
+# https://opencode.ai/v2/docs/
 
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://opencode.ai/v2/install | bash
 
 . ~/dotfiles/dev/opencode/config.sh
-
-npm i -g openguardrails-instrumentation-opencode

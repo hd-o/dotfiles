@@ -1,23 +1,28 @@
 {
-  "$schema": "https://opencode.ai/config.json",
   "default_agent": "plan",
-  "permission": "allow",
-  "agent": {
+  "websearch": {
+    "provider": "exa"
+  },
+  "permissions": [
+    {
+      "action": "*",
+      "resource": "*",
+      "effect": "allow"
+    }
+  ],
+  "agents": {
     "plan": {
-      "model": "opencode-go/mimo-v2.6-pro",
+      "model": "opencode-go/mimo-v2.6-pro"
     },
     "build": {
-      "model": "opencode-go/muse-spark-1.3-contributor",
-      "variant": "high"
+      "model": "opencode-go/muse-spark-1.3-contributor#high"
     },
     "general": {
-      "model": "opencode-go/muse-spark-1.3-contributor",
-      "variant": "high",
-      "prompt": "{file:~/dotfiles/dev/opencode/prompts/general.md}"
+      "model": "opencode-go/muse-spark-1.3-contributor#high",
+      "system": "{file:~/dotfiles/dev/opencode/prompts/general.md}"
     },
     "explore": {
-      "model": "opencode-go/muse-spark-1.3-contributor",
-      "variant": "minimal"
-    },
+      "model": "opencode-go/muse-spark-1.3-contributor#minimal"
+    }
   }
 }

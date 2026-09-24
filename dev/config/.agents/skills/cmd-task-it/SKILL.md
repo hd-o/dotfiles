@@ -1,5 +1,5 @@
 ---
-name: cmd-tasks
+name: cmd-task-it
 description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true

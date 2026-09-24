@@ -1,5 +1,5 @@
 ---
-name: cmd-grilling
+name: cmd-grill-me
 description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true

@@ -1,5 +1,5 @@
 ---
-name: cmd-ideation
+name: cmd-ideate
 description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true

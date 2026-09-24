@@ -1,5 +1,5 @@
 ---
-name: cmd-prd
+name: cmd-prd-it
 description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true

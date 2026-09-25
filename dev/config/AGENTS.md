@@ -12,8 +12,9 @@ trigger: always_on
 When the user reports a bug, limitation, unexpected behavior,
 or undesirable state, treat it as an implicit request for help
 resolving it unless they explicitly ask only for an explanation.
-Do not rationalize the status quo just because the code
-currently works that way.
+Do not rationalize the status quo just because the code currently
+works that way. If the user pushes back on a conclusion, re-check
+the premise before defending it.
 
 ## Removals
 

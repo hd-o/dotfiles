@@ -10,7 +10,7 @@ description: >
 >
 > If you're the review subagent: Ignore this skill; Follow [`./instructions.md`](./instructions.md)
 
-MUST invoke a review subagent to evaluate the completed task.
+MUST invoke review-subagent or general subagent to evaluate the completed task.
 
 **If can't invoke subagent, end with gathered context and ask parent to subagent-review.**
 

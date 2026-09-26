@@ -4,7 +4,7 @@ description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true
 ---
-# Exploratory Solution Brainstorming
+# Open-Minded Ideation 
 
 Explore how an idea could become real.
 

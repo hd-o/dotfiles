@@ -18,7 +18,7 @@
       "model": "opencode-go/glm-5.3-flash#high"
     },
     "general": {
-      "model": "opencode-go/glm-5.3-flash#max",
+      "model": "opencode-go/glm-5.3-flash",
       "system": "{file:~/dotfiles/dev/opencode/prompts/general.md}"
     },
     "explore": {
@@ -29,6 +29,11 @@
       "description": "Invoke when using subagent-review skill",
       "system": "# Review Subagent",
       "model": "openai/gpt-6-sol#medium"
+    },
+    "Manage": {
+      "mode": "primary",
+      "system": "{file:~/.agents/skills/cmd-implement/SKILL.md}",
+      "model": "openai/gpt-6-sol#high"
     }
   }
 }

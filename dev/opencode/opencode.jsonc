@@ -15,7 +15,7 @@
       "model": "openai/gpt-6-sol#high"
     },
     "build": {
-      "model": "opencode-go/glm-5.3-flash#high"
+      "model": "opencode-go/glm-5.3-flash"
     },
     "general": {
       "model": "opencode-go/glm-5.3-flash",

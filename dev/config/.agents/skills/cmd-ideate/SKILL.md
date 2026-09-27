@@ -35,3 +35,25 @@ with the current system, and worthwhile. These are different judgments.
 
 The goal is to discover promising ways forward, expose what stands in their
 way, and clarify what would need to change for the idea to work.
+
+## Decision rule for ideation
+
+Optimize recommendations for the user’s stated outcome, not for preserving the
+current stack or minimizing migration. Only prioritize preserving the current
+stack or minimizing migration if they are explicitly stated as constraints, or
+if they honestly are the best outcome given exhaustive exploration.
+
+Classify project guidance before using it: distinguish safety and execution
+constraints, implementation policies, descriptions of the current system, and
+design choices. Constraints govern what may be changed now; they do not by
+themselves rule out an alternative from research or recommendation.
+
+Assess promising alternatives on their merits first. Then state what project
+rules, dependencies, or architecture would need to change to adopt them. Do not
+rank a weaker fit first merely because it requires fewer approvals or is already
+installed.
+
+When the best outcome-first recommendation differs from the best option under
+current policy, present both and explain the difference. If an actual
+higher-priority instruction prohibits even discussing an option, follow that
+instruction rather than claiming this skill overrides it.

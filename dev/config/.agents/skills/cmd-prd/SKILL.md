@@ -1,14 +1,13 @@
 ---
-name: cmd-prd-it
-description: Ignore. User-invocable ONLY
+name: cmd-prd
 user-invocable: true
 disable-model-invocation: true
 ---
 # Write a PRD
 
-Create `.tracker/<project-name>/PRD.md`: a complete, internally consistent
+Create `.tracker/[project-name]/PRD.md`: a complete, internally consistent
 specification from which dependency-correct implementation tasks can be
-generated without guessing.
+generated without guessing. You decide the project name.
 
 **Scope:** Scope and decisions come only from the user's request,
 approved/current plan, and named live or tracker documents. Live project

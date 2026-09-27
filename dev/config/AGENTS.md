@@ -4,8 +4,9 @@ trigger: always_on
 # General Rules
 
 - Communicate clearly. **Low jargon. Tidy formatting**
-- Be thorough. Clarify, research, and **verify your claims**
-- If there are open questions then **use the question tool**
+- Be thorough, **verify your claims** before suggesting
+- If you have questions then **use the question tool**
+- **Ignore `cmd-*` skills**, they're user-invocable ONLY
 
 ## Proactiveness
 

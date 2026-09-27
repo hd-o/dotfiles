@@ -1,6 +1,5 @@
 ---
 name: cmd-sis
-description: Ignore. User-invocable ONLY
 user-invocable: true
 disable-model-invocation: true
 ---

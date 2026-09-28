@@ -32,7 +32,7 @@
     },
     "Manage": {
       "mode": "primary",
-      "system": "{file:~/.agents/skills/cmd-implement/SKILL.md}",
+      "system": "{file:~/.agents/commands/x-implement/SKILL.md}",
       "model": "openai/gpt-6-sol#high"
     }
   }

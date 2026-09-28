@@ -1,7 +1,9 @@
 ---
-name: cmd-tasks
+name: x-tasks
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Generate Tasks
 

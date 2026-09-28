@@ -1,7 +1,9 @@
 ---
-name: cmd-orchestrate
+name: x-orchestrate
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Orchestration
 

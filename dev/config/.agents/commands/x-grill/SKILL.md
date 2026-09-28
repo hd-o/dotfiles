@@ -1,7 +1,9 @@
 ---
-name: cmd-grill
+name: x-grill
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Grilling
 

@@ -1,7 +1,9 @@
 ---
-name: cmd-review
+name: x-review
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Review It
 

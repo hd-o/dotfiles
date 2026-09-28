@@ -1,7 +1,9 @@
 ---
-name: cmd-ideate
+name: x-ideate
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Open-Minded Ideation 
 

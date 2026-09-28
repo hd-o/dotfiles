@@ -1,7 +1,9 @@
 ---
-name: cmd-trio
+name: x-trio
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # /trio
 

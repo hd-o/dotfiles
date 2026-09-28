@@ -1,7 +1,9 @@
 ---
-name: cmd-sis
+name: x-sis
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Say It Simpler
 

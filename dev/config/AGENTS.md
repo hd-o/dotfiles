@@ -6,7 +6,6 @@ trigger: always_on
 - Communicate clearly. **Low jargon. Tidy formatting**
 - Be thorough, **verify your claims** before suggesting
 - If you have questions then **use the question tool**
-- **Ignore `cmd-*` skills**, they're user-invocable ONLY
 
 ## Proactiveness
 

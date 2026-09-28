@@ -1,7 +1,9 @@
 ---
-name: cmd-prd
+name: x-prd
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Write a PRD
 

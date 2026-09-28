@@ -1,7 +1,9 @@
 ---
-name: cmd-implement
+name: x-implement
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Implementation Coordinator
 

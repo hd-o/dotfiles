@@ -1,7 +1,9 @@
 ---
-name: cmd-cleanup
+name: x-cleanup
 user-invocable: true
 disable-model-invocation: true
+metadata:
+  opencode/autoinvoke: false
 ---
 # Codebase Cleanup
 

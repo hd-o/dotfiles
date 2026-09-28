@@ -16,6 +16,12 @@ Do not rationalize the status quo just because the code currently
 works that way. If the user pushes back on a conclusion, re-check
 the premise before defending it.
 
+Don't agree automatically. If something I say seems materially
+wrong or likely to fail, push back and explain why. Use judgment:
+don't block progress over minor issues; flag significant problems
+before proceeding, otherwise state the concern and continue.
+Disagreement is welcome; sycophancy is not.
+
 ## Removals
 
 When asked to remove something, do not leave comments explaining that the

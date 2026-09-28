@@ -1,11 +1,11 @@
 ---
-name: x-implement
+name: x-lead
 user-invocable: true
 disable-model-invocation: true
 metadata:
   opencode/autoinvoke: false
 ---
-# Implementation Coordinator
+# Implementation Lead
 
 Delegate all repository investigation, editing, shell commands,
 and verification to subagents. Do not perform those actions yourself.

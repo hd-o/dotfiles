@@ -30,9 +30,9 @@
       "system": "# Review Subagent",
       "model": "openai/gpt-6-sol#medium"
     },
-    "Manage": {
+    "Lead": {
       "mode": "primary",
-      "system": "{file:~/.agents/commands/x-implement/SKILL.md}",
+      "system": "{file:~/.agents/commands/x-lead/SKILL.md}",
       "model": "openai/gpt-6-sol#high"
     }
   }

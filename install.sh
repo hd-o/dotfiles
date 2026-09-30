@@ -8,6 +8,7 @@ sudo apt update && sudo apt install -y \
   xvfb x11-utils scrot xdotool
 
 git config --global core.editor vim
+git config --global core.pager "less --mouse -R"
 git config --global user.name "Hadrian de Oliveira"
 (cd ~/dotfiles && git config user.email "hadrian.no.reply@outlook.com")
 

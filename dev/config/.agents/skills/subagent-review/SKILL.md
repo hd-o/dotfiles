@@ -2,17 +2,31 @@
 name: subagent-review
 description: >
    Use after completing a coding task (implementation, refactor, fix)
-   to review work before considering it done
+   to review work before considering it done. Skip this skill if the task
+   only included minor updates that are sufficiently verified by running
+   the project's automated checks (typecheck, lint, tests, evals)
 ---
 # Work Review
 
-> [!NOTE]
->
-> If you're the review subagent: Ignore this skill; Follow [`./instructions.md`](./instructions.md)
+> If you're the review subagent: IGNORE this skill, follow [`./instructions.md`](./instructions.md)
 
-MUST invoke review-subagent or general subagent to evaluate the completed task.
+MUST invoke review subagent or general subagent to evaluate the completed task.
 
 **If can't invoke subagent, end with gathered context and ask parent to subagent-review.**
+
+## When to use
+
+Run this review after implementation and relevant automated checks,
+before declaring a coding task complete. Review is required for changes
+to behavior, control flow, interfaces, data handling, or code structure,
+even when automated checks pass.
+
+Skip only small, mechanical changes whose correctness is sufficiently
+verified by the project's automated checks. A small diff alone does
+not justify skipping review. If unsure whether the exception applies,
+run the review.
+
+## Instructions
 
 Every review ends with an explicit **PASS** or **FAILED** verdict:
 

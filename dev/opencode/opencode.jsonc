@@ -12,10 +12,10 @@
   ],
   "agents": {
     "plan": {
-      "model": "openai/gpt-6-sol#high"
+      "model": "openai/gpt-6.1-sol#high"
     },
     "build": {
-      "model": "opencode-go/glm-5.3-flash#low"
+      "model": "opencode-go/glm-5.3-flash#high"
     },
     "general": {
       "model": "opencode-go/glm-5.3-flash",
@@ -28,12 +28,12 @@
       "mode": "subagent",
       "description": "Invoke when using subagent-review skill",
       "system": "# Review Subagent",
-      "model": "openai/gpt-6-sol#medium"
+      "model": "openai/gpt-6.1-sol#medium"
     },
     "Lead": {
       "mode": "primary",
       "system": "{file:~/.agents/commands/x-lead/SKILL.md}",
-      "model": "openai/gpt-6-sol#medium"
+      "model": "openai/gpt-6.1-sol#medium"
     }
   }
 }

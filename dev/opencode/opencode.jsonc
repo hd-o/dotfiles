@@ -10,6 +10,9 @@
       "effect": "allow"
     }
   ],
+  "experimental": {
+    "subagent_depth": 2
+  },
   "agents": {
     "plan": {
       "model": "openai/gpt-6.1-sol#high"
@@ -18,22 +21,25 @@
       "model": "openai/gpt-6.1-sol#medium"
     },
     "general": {
-      "model": "openai/gpt-6.1-sol#medium",
-      "system": "{file:~/dotfiles/dev/opencode/prompts/general.md}"
+      "model": "openai/gpt-6.1-sol#high",
+      "system": "{file:~/dotfiles/dev/opencode/system/general.md}",
+      "permissions": [
+        {
+          "action": "subagent",
+          "resource": "*",
+          "effect": "allow"
+        }
+      ]
     },
     "explore": {
-      "model": "opencode-go/muse-spark-1.3-contributor#low"
+      "model": "opencode-go/muse-spark-1.3-contributor#low",
+      "description": "{file:~/dotfiles/dev/opencode/description/explore.md}"
     },
     "review": {
       "mode": "subagent",
       "description": "Invoke when using subagent-review skill",
       "system": "# Review Subagent",
-      "model": "openai/gpt-6.1-sol#medium"
-    },
-    "Lead": {
-      "mode": "primary",
-      "system": "{file:~/.agents/commands/x-lead/SKILL.md}",
-      "model": "openai/gpt-6.1-sol#medium"
+      "model": "openai/gpt-6.1-sol#high"
     }
   }
 }

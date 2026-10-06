@@ -15,10 +15,10 @@
       "model": "openai/gpt-6.1-sol#high"
     },
     "build": {
-      "model": "opencode-go/glm-5.3-flash#high"
+      "model": "openai/gpt-6.1-sol#medium"
     },
     "general": {
-      "model": "opencode-go/glm-5.3-flash",
+      "model": "openai/gpt-6.1-sol#medium",
       "system": "{file:~/dotfiles/dev/opencode/prompts/general.md}"
     },
     "explore": {

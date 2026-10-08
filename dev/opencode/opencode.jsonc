@@ -15,10 +15,10 @@
   },
   "agents": {
     "plan": {
-      "model": "openai/gpt-6.1-sol#high"
+      "model": "openai/gpt-6.1-sol-fast#max"
     },
     "build": {
-      "model": "openai/gpt-6.1-sol#medium"
+      "model": "openai/gpt-6.1-sol-fast#high"
     },
     "general": {
       "model": "openai/gpt-6.1-sol#high",

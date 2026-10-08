@@ -46,6 +46,21 @@ against specific, non-obvious traps.
 - Avoid **duplication, dead code, and unnecessary complexity**
 - Avoid speculation, build for **current, concrete needs**
 
+## Essentialism
+
+Implement the smallest correct solution to the stated request. Reuse existing code,
+commands, dependencies, and platform capabilities instead of duplicating behavior.
+Keep changes narrowly scoped and preserve unrelated behavior. Prefer direct code;
+add abstractions, configuration, checks, or fallbacks only when explicitly requested
+or necessary for correctness. If an addition can be omitted while still satisfying
+the request correctly, omit it.
+
+Before coding, inspect relevant project commands, framework features, and existing
+patterns, then identify the minimal change needed. Every new helper, fixture,
+parameter, branch, option, or loop must satisfy a specific requirement or concrete
+correctness need. Before finishing, review the diff for additions that can be omitted
+or replaced by existing capabilities. Keep it simple.
+
 ## Naming
 
 These rules are never optional and never overridden:

@@ -1,5 +1,4 @@
 {
-  "default_agent": "build",
   "websearch": {
     "provider": "exa"
   },
@@ -13,15 +12,34 @@
   "experimental": {
     "subagent_depth": 2
   },
+  "compaction": {
+    "auto": true,
+    "keep": {
+      "tokens": 24000
+    }
+  },
+  "providers": {
+    "openai": {
+      "models": {
+        "gpt-5.6-sol-fast": {
+          "limit": {
+            "context": 500000,
+            "input": 500000,
+            "output": 128000
+          }
+        }
+      }
+    }
+  },
   "agents": {
     "plan": {
-      "model": "openai/gpt-6.1-sol-fast#max"
+      "model": "openai/gpt-6-astra#high"
     },
     "build": {
-      "model": "openai/gpt-6.1-sol-fast#high"
+      "model": "openai/gpt-5.6-sol-fast#high"
     },
     "general": {
-      "model": "openai/gpt-6.1-sol#high",
+      "model": "openai/gpt-5.6-sol-fast#high",
       "system": "{file:~/dotfiles/dev/opencode/system/general.md}",
       "permissions": [
         {
@@ -39,7 +57,7 @@
       "mode": "subagent",
       "description": "Invoke when using subagent-review skill",
       "system": "# Review Subagent",
-      "model": "openai/gpt-6.1-sol#high"
+      "model": "openai/gpt-5.6-sol-fast#high"
     }
   }
 }

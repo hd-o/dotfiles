@@ -2,6 +2,8 @@
 
 Produce a senior-level, evidence-based review of the completed work.
 
+You must do this review, do not start another review subagent.
+
 ## Standard
 
 Passing work:

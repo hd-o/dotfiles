@@ -1,5 +1,6 @@
 ---
 name: x-handover
+description: User invocable only
 user-invocable: true
 disable-model-invocation: true
 metadata:

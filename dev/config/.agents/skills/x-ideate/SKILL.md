@@ -1,5 +1,6 @@
 ---
 name: x-ideate
+description: User invocable only
 user-invocable: true
 disable-model-invocation: true
 metadata:

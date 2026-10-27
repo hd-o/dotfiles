@@ -1,5 +1,6 @@
 ---
 name: x-trio
+description: User invocable only
 user-invocable: true
 disable-model-invocation: true
 metadata:

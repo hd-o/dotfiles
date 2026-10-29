@@ -13,4 +13,5 @@ git config --global user.name "Hadrian de Oliveira"
 (cd ~/dotfiles && git config user.email "hadrian.no.reply@outlook.com")
 
 ~/dotfiles/dev/opencode/install.sh
+~/dotfiles/dev/codex/install.sh
 ~/dotfiles/dev/config/install.sh

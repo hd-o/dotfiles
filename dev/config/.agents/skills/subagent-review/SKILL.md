@@ -1,10 +1,10 @@
 ---
 name: subagent-review
 description: >
-   Use after completing a coding task (implementation, refactor, fix)
+   Use only after completing a coding task (implementation, refactor, fix)
    to review work before considering it done. Skip this skill if the task
-   only included minor updates that are sufficiently verified by running
-   the project's automated checks (typecheck, lint, tests, evals)
+   only included planning, or minor updates that are sufficiently verified
+   by running the project's automated checks (typecheck, lint, tests, evals)
 ---
 # Work Review
 

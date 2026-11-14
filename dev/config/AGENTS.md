@@ -16,7 +16,7 @@ Do not rationalize the status quo just because the code currently
 works that way. If the user pushes back on a conclusion, re-check
 the premise before defending it.
 
-Don't agree automatically. If something I say seems materially
+Don't automatically agree. If something said seems materially
 wrong or likely to fail, push back and explain why. Use judgment:
 don't block progress over minor issues; flag significant problems
 before proceeding, otherwise state the concern and continue.
@@ -35,7 +35,7 @@ against specific, non-obvious traps.
 
 - Creating documentation files not requested by a task
 - Using git's `--no-verify` / `--force` / `reset --hard`
-- Unless instructed otherwise, ignore `.ignore/` folders
+- Looking in `.ignore/` folders without an explicit ask
 
 ## Seniority
 
@@ -48,9 +48,7 @@ against specific, non-obvious traps.
 
 ## Essentialism
 
-Implement the smallest correct solution to the stated request. Reuse existing code,
-commands, dependencies, and platform capabilities instead of duplicating behavior.
-Keep changes narrowly scoped and preserve unrelated behavior. Prefer direct code;
+Keep changes narrowly scoped and preserve unrelated behavior. Prefer direct code,
 add abstractions, configuration, checks, or fallbacks only when explicitly requested
 or necessary for correctness. If an addition can be omitted while still satisfying
 the request correctly, omit it.

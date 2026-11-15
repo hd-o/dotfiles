@@ -35,11 +35,12 @@ Every review ends with an explicit **PASS** or **FAILED** verdict:
    - Clear description of the goal, approach, and key decisions
    - Relevant artifacts (PRD, Task description, modified file paths)
    - Original requirements or acceptance criteria
+
 1. Invoke a subagent with the gathered context
 
    - Instruct the subagent to read and strictly follow [`./instructions.md`](./instructions.md)
    - Provide the description, artifacts, and files to the subagent
-   - A convention break is FAILED, not a nit
+
 1. After the subagent responds:
 
    - If FAILED, loop until PASS (fix, then re-invoke review)

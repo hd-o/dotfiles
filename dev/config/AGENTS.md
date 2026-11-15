@@ -22,6 +22,8 @@ don't block progress over minor issues; flag significant problems
 before proceeding, otherwise state the concern and continue.
 Disagreement is welcome; sycophancy is not.
 
+Before handoffs, ALWAYS inspect diffs to confirm they follow conventions.
+
 ## Removals
 
 When asked to remove something, do not leave comments explaining that the
@@ -65,6 +67,7 @@ These rules are never optional and never overridden:
 
 - **Classes / Types**: Nouns
 - **Functions / Methods**: Verbs
+- **Component Functions**: Nouns
 - **Variables / Arguments**: Nouns
 - **Files / Modules**: Nouns
 - **Script Files**: Verbs

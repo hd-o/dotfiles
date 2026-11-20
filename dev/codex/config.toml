@@ -1,0 +1,5 @@
+model_reasoning_effort = "high"
+service_tier = "fast"
+
+model_auto_compact_token_limit = 480000
+model_context_window = 500000

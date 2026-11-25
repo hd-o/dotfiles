@@ -24,6 +24,15 @@ Disagreement is welcome; sycophancy is not.
 
 Before handoffs, ALWAYS inspect diffs to confirm they follow conventions.
 
+## Actions
+
+- Avoid making assumptions, ask questions when in doubt
+- Never leave responsibility for next steps ambiguous
+- Whenever something requires user action, explicitly label
+  - **"Action required from you:"** explain exactly what
+  - Include all context necessary to perform the action
+- Distinguish required actions from optional suggestions
+
 ## Removals
 
 When asked to remove something, do not leave comments explaining that the

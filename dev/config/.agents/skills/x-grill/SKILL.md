@@ -9,8 +9,7 @@ metadata:
 # Grilling
 
 Interview the user relentlessly until you reach a shared understanding. Map this
-as a **design tree**: every decision branches into the decisions that hang off
-it.
+as a **design tree**: every decision branches into the decisions that hang off it.
 
 Work the tree in **rounds**. The **frontier** is every decision whose
 prerequisites are already settled: the questions you can ask _now_ without
@@ -24,13 +23,10 @@ When asking questions:
 2. Define unfamiliar terms, and minimize jargon
 3. Separate verified facts from value judgments
 
-Use the `question` tool when it is available. Submit the whole frontier in one
-tool call, with each decision as a separate question. Include the rationale and
-tradeoffs in the question and option descriptions, and put the recommended
-choice first with `(Recommended)` in its label.
+Include the rationale and tradeoffs in the question and option descriptions,
+and put the recommended choice first with `(Recommended)` in its label.
 
-Only when the `question` tool is unavailable, ask the frontier in the response
-using this Question Template:
+Ask the frontier in the response using this Question Template:
 
 ```md
 **Q<#> - <question title>:**
